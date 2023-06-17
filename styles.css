@@ -1,7 +1,10 @@
+@font-face {
+	font-family: "Poppins Light";
+	src: url('Poppins-Light.ttf');
+}
 
 * {
-  font-family: "Inter", sans-serif;
-	color: #666666;
+	font-family: "Poppins Light", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -26,7 +29,7 @@
 }
 
 .profile-pic {
-  width: 200px;
+	width: 200px;
 	margin-bottom: 23px;
 }
 
@@ -34,7 +37,6 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-  /* background-color: #cddc39; */
 	margin: 10px 0;
 }
 
@@ -42,16 +44,16 @@
 	text-decoration: none;
 	padding: 0 10px;
 	margin: 19px 0;
+	color: #666666;
 }
 
 .page-links {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-  /* background-color: pink; */
 }
 
-ul li {
+.page-links ul li {
 	display: inline-block;
 	margin: 0 10px;
 	text-decoration: underline;
@@ -60,3 +62,119 @@ ul li {
 	border-radius: 4px;
 }
 
+.page-links ul li a {
+	color: #666666;
+}
+
+.sidebar {
+	position: fixed;
+	width: 200px;
+	height: calc(100% - 120px);
+	left: 50px;
+	overflow: auto;
+	padding-top: 180px;
+}
+.sidebar ul {
+	margin-top: 16px;
+	list-style-type: none;
+	padding: 0;
+}
+.sidebar ul li a {
+	display: block;
+	padding: 10px 20px;
+	color: #333;
+	text-decoration: none;
+}
+.sidebar ul li a:hover {
+	background-color: #ddd;
+}
+.content {
+	margin-left: 260px;
+	padding: 0px 16px 1px;
+	height: 1000px;
+	max-width: 800px;
+	margin-right: auto;
+}
+
+.content div:first-child {
+	margin-top: 100px;
+	padding-top: 69px;
+}
+
+.topnav {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 20px 16px;
+	box-sizing: border-box;
+	background-color: white;
+}
+.topnav a {
+	float: right;
+	display: block;
+	color: #333;
+	padding: 0 20px;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 24px;
+}
+.topnav .name {
+	float: left;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Monoton', cursive;
+}
+.content-section {
+	margin-top: 40px;
+}
+
+.content-section h2 {
+	margin: 20px 0px;
+}
+.content-section p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+@media screen and (max-width: 768px) {
+
+	.container {
+		padding-top: 100px;
+	}
+
+	.page-links {
+		font-size: 12px;
+	}
+
+	.sidebar {
+		display: none;
+	}
+	
+	.topnav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.topnav .name {
+		margin-bottom: 20px;
+	}
+
+	.topnav a {
+		margin: 4px 0px;
+	}
+
+	.content {
+		margin-left: 0px;
+		padding: 0px 25px;
+	}
+
+	.content div:first-child {
+		padding-top: 115px;
+	}
+
+	.content-section h2 {
+		text-align: center;
+	}
+}
