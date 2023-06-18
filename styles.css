@@ -11,6 +11,9 @@
 	padding: 0;
 }
 
+p {
+	margin-bottom: 16px;
+}
 menu, ol, ul {
 	padding-left: 0;
 }
@@ -177,11 +180,13 @@ menu, ol, ul {
 	.topnav a {
 		margin: 4px 0px;
 		font-size: 14px;
+		padding: 0px 15px;
 	}
 
 	.content {
 		margin-left: 0px;
 		padding: 0px 25px;
+		top: 0px;
 	}
 
 	.content div:first-child {
