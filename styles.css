@@ -260,6 +260,17 @@ sub {
 	margin-top: 90px;
 }
 
+@media screen and (max-width: 992px) {
+	.content {
+		padding: 0px 30px 100px 30px;
+		width: revert;
+		margin-left: 0px;
+	}
+
+	.sidebar {
+		display: none;
+	}
+}
 @media screen and (max-width: 768px) {
 
 	.home-container {
