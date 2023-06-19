@@ -8,6 +8,10 @@
 	src: url('SourceCodePro-Light.ttf');
 }
 
+html {
+	height: 100%;
+}
+
 * {
 	box-sizing: border-box;
 	border: none;
@@ -20,6 +24,7 @@
 p {
 	margin-bottom: 16px;
 }
+
 menu, ol, ul, li {
 	padding-left: 0;
 }
@@ -110,7 +115,7 @@ menu, ol, ul, li {
 }
 .content {
 	margin-left: 260px;
-	padding: 0px 16px;
+	padding: 0px 0px 100px 0px;
 	width: 800px;
 	margin-right: auto;
 	position: relative;
@@ -168,7 +173,7 @@ menu, ol, ul, li {
 }
 
 /* About Gallery */
-.gallery-grid{
+.photo-grid{
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: 1fr 1fr;
@@ -176,11 +181,22 @@ menu, ol, ul, li {
 	height: 1122px;
 }
 
-.gallery-grid img {
+.photo-grid img {
 	width: 100%;
 	object-fit: cover;
 	min-width: 0;
 	min-height: 0;
+}
+
+.kitty-grid{
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr ;
+}
+
+.kitty-grid img {
+	width: 100%;
 }
 
 .washroom {
@@ -255,9 +271,14 @@ menu, ol, ul, li {
 		text-align: center;
 	}
 
-	.gallery-grid {
+	.photo-grid {
 		display: block;
 		width: 100%;
 		height: revert;
+	}
+
+	.kitty-grid{
+		display: block;
+		width: 100%;
 	}
 }
