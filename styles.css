@@ -1,24 +1,30 @@
 @font-face {
-	font-family: "Poppins Light";
-	src: url('Poppins-Light.ttf');
+	font-family: "Comfortaa Light";
+	src: url('Comfortaa-Light.ttf');
+}
+
+@font-face {
+	font-family: "Source Code Pro Light";
+	src: url('SourceCodePro-Light.ttf');
 }
 
 * {
 	box-sizing: border-box;
 	border: none;
-	font-family: "Poppins Light", sans-serif;
+	font-family: "Comfortaa Light", sans-serif;
 	margin: 0;
 	padding: 0;
+	line-height: 1.2;
 }
 
 p {
 	margin-bottom: 16px;
 }
-menu, ol, ul {
+menu, ol, ul, li {
 	padding-left: 0;
 }
 
-.container {
+.home-container {
 	position: relative;
 	padding-top: 200px;
 }
@@ -30,11 +36,14 @@ menu, ol, ul {
 }
 
 .major h1 {
-	color: black;
+	color: #484855;
+	font-family: "Source Code Pro Light"
 }
 
 .major h4 {
 	padding-top: 10px;
+	color: #484855;
+	font-family: "Source Code Pro Light"
 }
 
 .profile-pic {
@@ -47,32 +56,34 @@ menu, ol, ul {
 	flex-direction: row;
 	justify-content: center;
 	margin: 10px 0;
+	padding-top: 22px;
 }
 
 .external-links a {
 	text-decoration: none;
 	padding: 0 10px;
 	margin: 19px 0;
-	color: #666666;
+	color: #485455;
 }
 
 .page-links {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding-top: 22px;
 }
 
 .page-links ul li {
 	display: inline-block;
-	margin: 0 10px;
-	text-decoration: underline;
-	background-color: #66666612;
-	padding: 10px;
+	margin: 0px 23px;
+	padding: 2px;
 	border-radius: 4px;
 }
 
 .page-links ul li a {
-	color: #666666;
+	text-decoration: none;
+	color: #9abac1fa;
+	font-family: "Source Code Pro Light"
 }
 
 .sidebar {
@@ -100,7 +111,7 @@ menu, ol, ul {
 .content {
 	margin-left: 260px;
 	padding: 0px 16px;
-	max-width: 800px;
+	width: 800px;
 	margin-right: auto;
 	position: relative;
 	top: 100px;
@@ -135,12 +146,14 @@ menu, ol, ul {
 	text-decoration: none;
 	line-height: 24px;
 }
+
 .topnav .name {
 	float: left;
 	font-size: 40px;
 	font-weight: bold;
 	font-family: 'Monoton', cursive;
 }
+
 .content-section {
 	margin-top: 40px;
 }
@@ -148,9 +161,53 @@ menu, ol, ul {
 .content-section h2 {
 	margin: 20px 0px;
 }
+
 .content-section p {
 	text-align: justify;
 	text-justify: inter-word;
+}
+
+/* About Gallery */
+.gallery-grid{
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	height: 1122px;
+}
+
+.gallery-grid img {
+	width: 100%;
+	object-fit: cover;
+	min-width: 0;
+	min-height: 0;
+}
+
+.washroom {
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+} 
+
+.birds {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+}
+
+.school {
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+	margin-top: 13px;
+}
+
+.friend {
+	grid-row: 3 / -1;
+	grid-column: 1 / 2;
+}
+
+.houses {
+	grid-row: 3 / -1;
+	grid-column: 2 / 3;
+	margin-top: 1px;
 }
 
 @media screen and (max-width: 768px) {
@@ -187,6 +244,7 @@ menu, ol, ul {
 		margin-left: 0px;
 		padding: 0px 25px;
 		top: 0px;
+		width: revert;
 	}
 
 	.content div:first-child {
@@ -195,5 +253,11 @@ menu, ol, ul {
 
 	.content-section h2 {
 		text-align: center;
+	}
+
+	.gallery-grid {
+		display: block;
+		width: 100%;
+		height: revert;
 	}
 }
