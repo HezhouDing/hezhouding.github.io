@@ -1,6 +1,10 @@
 @font-face {
-	font-family: "Comfortaa Light";
-	src: url('Comfortaa-Light.ttf');
+	font-family: "Train One";
+	src: url('TrainOne-Regular.ttf');
+}
+@font-face {
+	font-family: "Outfit Light";
+	src: url('Outfit-Light.ttf');
 }
 
 @font-face {
@@ -15,7 +19,7 @@ html {
 * {
 	box-sizing: border-box;
 	border: none;
-	font-family: "Outfit", sans-serif;
+	font-family: "Outfit Light", sans-serif;
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
@@ -37,7 +41,7 @@ sub {
 
 .home-container {
 	position: relative;
-	padding-top: 200px;
+	padding-top: 150px;
 }
 
 .major {
@@ -48,13 +52,13 @@ sub {
 
 .major h1 {
 	color: #484855;
-	font-family: "Source Code Pro Light"
+	font-family: "Outfit Light"
 }
 
 .major h4 {
 	padding-top: 10px;
 	color: #484855;
-	font-family: "Source Code Pro Light"
+	font-family: "Outfit Light"
 }
 
 .profile-pic {
@@ -94,7 +98,7 @@ sub {
 .page-links ul li a {
 	text-decoration: none;
 	color: #53bdcffa;
-	font-family: "Source Code Pro Light"
+	font-family: "Outfit Light"
 }
 
 .sidebar {
@@ -173,7 +177,7 @@ sub {
 	float: left;
 	font-size: 40px;
 	font-weight: bold;
-	font-family: 'Train One', cursive;
+	font-family: 'Train One';
 }
 
 .content-section {
